@@ -9,7 +9,7 @@ class Role extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['role_name', 'description', 'created_at', 'update_at'];
+    protected $fillable = ['role_name', 'description', 'created_at', 'updated_at'];
     protected $dates = ['deleted_at'];
 
     public function users()
